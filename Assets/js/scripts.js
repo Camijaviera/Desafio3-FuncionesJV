@@ -5,9 +5,10 @@
     }
 
     pintar();
-   
+
     ele.addEventListener("click", ()=>{
-       return ele.style.backgroundColor= 'yellow'}
+       return pintar("yellow");
+    }
     );
 
 

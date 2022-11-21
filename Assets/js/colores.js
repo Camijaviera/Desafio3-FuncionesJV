@@ -16,22 +16,21 @@ document.addEventListener('keydown', function (event) {
     console.log(color);
     })
 
-colorOne.addEventListener ("click", () =>{
-    return colorOne.style.backgroundColor= color;
+function hacerClick (){
 
-});
+}   
 
-colorTwo.addEventListener ("click", () =>{
-    return colorTwo.style.backgroundColor= color;
-
-});
-
-colorThree.addEventListener ("click", () =>{
-    return colorThree.style.backgroundColor= color;
-
-});
-
-colorFour.addEventListener ("click", () =>{
-    return colorFour.style.backgroundColor= color;
-
+document.addEventListener("click", function (e){
+    if (e.target === colorOne){
+        return(colorOne.style.backgroundColor=color);
+    }
+    else if(e.target === colorTwo){
+        return(colorTwo.style.backgroundColor=color);
+    }
+    else if(e.target === colorThree){
+        return(colorThree.style.backgroundColor=color);
+    }
+    else if(e.target === colorFour){
+        return(colorFour.style.backgroundColor=color);
+    }
 });
